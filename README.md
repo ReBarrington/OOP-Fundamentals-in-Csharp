@@ -10,7 +10,15 @@
 - Inheritance
 - Polymorphism
 
-<br>
+<hr>
+
+## Common Application Layers
+
+- User Interface Layer
+- Business Logic Layer
+- Data Access Layer (Entity Framework)
+
+<hr>
 
 ## Classes in this project:
 Customer
