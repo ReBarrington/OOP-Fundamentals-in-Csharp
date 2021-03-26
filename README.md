@@ -75,7 +75,7 @@ Creating Get/Set
                     }
                 }
 
-Or, autho-implement property: 
+Or, auto-implement property: 
 
             public class Customer
                 {
