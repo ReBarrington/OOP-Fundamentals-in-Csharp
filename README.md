@@ -58,6 +58,7 @@ Order Item
 ## The Customer Class
 
 Creating Get/Set
+
             public class Customer
                 {
                     private string _lastName;
