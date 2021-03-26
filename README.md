@@ -54,3 +54,29 @@ Order Item
 - `Validate()`
 - `Retrieve()`
 - `Save()`
+
+## The Customer Class
+
+Creating Get/Set
+            public class Customer
+                {
+                    private string _lastName;
+                    public string LastName
+                    {
+                        get
+                        {
+                            return _lastName;
+                        }
+                        set
+                        {
+                            _lastName = value;
+                        }
+                    }
+                }
+
+Or, autho-implement property: 
+
+            public class Customer
+                {
+                    public string LastName { get; set; }
+                }
