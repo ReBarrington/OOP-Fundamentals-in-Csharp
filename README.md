@@ -4,7 +4,9 @@
 - Abstraction
     - A concept: Simplify reality, ignore extraneous details, focus on what's important for a purpose. 
 - Encapsulation
-    - A technique: Keeping fields in a class means no other code needs to know/use these details, instead will call a `get()` or `set()` to the class to retrieve information. 
+    - A technique: Using classes means no other code needs to know/use these details, instead will call a `get()` or `set()` to the class to retrieve information. 
+    - This protects the data, allows for authorization before getting data, and allows for validation before setting data. 
+    - Helps manage complexity as onlt the class needs to understand the implementation. 
 - Inheritance
 - Polymorphism
 
