@@ -84,4 +84,17 @@ Or, auto-implement property:
 
 ## Unit Tests
 
-Tests belong in a separate project and folder.
+Tests belong in a separate project and folder. Test > Test Explorer > Run All
+
+## Creating a New Object
+
+```
+Customer customer1 = new Customer();
+```
+
+Assigning a new instance of Customer to object variable `customer1`. The type of the object variable is the type of the created object.
+For local use, use `var` instead:
+
+```
+var customer1 = new Customer();
+```
