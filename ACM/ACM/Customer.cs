@@ -12,7 +12,17 @@ namespace ACM
         {
             get
             {
-                return $"{LastName}, {FirstName}";
+                string fullName = LastName;
+                if (!string.IsNullOrWhiteSpace(FirstName))
+                { // first name exists
+                    if (!string.IsNullOrWhiteSpace(fullName))
+                    { // last name exists
+                        // add comma and space after last name
+                        fullName += ", ";
+                    }
+                    fullName += FirstName;
+                }
+                return fullName;
             }
         }
     }

@@ -24,5 +24,41 @@ namespace ACMTest
             Assert.AreEqual(expected, actual);
 
         }
+
+        [TestMethod]
+        public void FirstNameEmpty()
+        {
+            // -- Arrange
+            Customer customer = new Customer
+            {
+                LastName = "Baggins"
+            };
+            string expected = "Baggins";
+
+            // -- Act
+            string actual = customer.FullName;
+
+            // -- Assert
+            Assert.AreEqual(expected, actual);
+
+        }
+
+        [TestMethod]
+        public void LastNameEmpty()
+        {
+            // -- Arrange
+            Customer customer = new Customer
+            {
+                FirstName = "Bilbo"
+            };
+            string expected = "Bilbo";
+
+            // -- Act
+            string actual = customer.FullName;
+
+            // -- Assert
+            Assert.AreEqual(expected, actual);
+
+        }
     }
 }
