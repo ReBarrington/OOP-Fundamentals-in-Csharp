@@ -81,3 +81,7 @@ Or, auto-implement property:
                 {
                     public string LastName { get; set; }
                 }
+
+## Unit Tests
+
+Tests belong in a separate project and folder.
