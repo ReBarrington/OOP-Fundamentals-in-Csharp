@@ -1,9 +1,21 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace ACM
 {
     public class Customer
     {
+        public Customer()
+         // constructor
+        {
+
+        }
+        public Customer(int customerId)
+        // constructor - creates id
+        {
+            CustomerId = customerId;
+        }
+
         public int CustomerId { get; private set; }
         public string EmailAddress { get; set; }
         public string FirstName {  get; set; }
@@ -24,6 +36,25 @@ namespace ACM
                 }
                 return fullName;
             }
+        }
+        public bool Validate()
+        {
+            var isValid = true;
+            if (string.IsNullOrWhiteSpace(LastName)) isValid = false;
+            if (string.IsNullOrWhiteSpace(FirstName)) isValid = false;
+            return isValid;
+        }
+
+        public Customer Retrieve(int customerId)
+        {
+            // code that retrieves the defined user
+            return new Customer();
+        }
+
+        public List<Customer> Retrieve()
+        {
+            // code that retrieves all customers
+            return new List<Customer>();
         }
     }
 }
