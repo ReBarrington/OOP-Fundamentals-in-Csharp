@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ACM",
+    "\\ACM\\ACM",
+    "\\ACM\\Tests",
+    "\\ACM\\Tests\\ACMTest"
   ],
+  "SelectedNode": "\\README.md",
   "PreviewInSolutionExplorer": false
 }

@@ -98,3 +98,14 @@ For local use, use `var` instead:
 ```
 var customer1 = new Customer();
 ```
+
+## Static Modifier
+
+``` public static int InstanceCount { get; set; }```
+
+The static modifier defines members that belong to the class itself and not to an instance of that class. 
+
+```
+c1.FirstName = "Bilbo";
+Customer.InstanceCount += 1;
+ ```
