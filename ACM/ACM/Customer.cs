@@ -44,17 +44,5 @@ namespace ACM
             if (string.IsNullOrWhiteSpace(FirstName)) isValid = false;
             return isValid;
         }
-
-        public Customer Retrieve(int customerId)
-        {
-            // code that retrieves the defined user
-            return new Customer();
-        }
-
-        public List<Customer> Retrieve()
-        {
-            // code that retrieves all customers
-            return new List<Customer>();
-        }
     }
 }
