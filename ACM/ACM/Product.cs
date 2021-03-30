@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ACM
 {
-    public class Product
+    public class Product: EntityBase
     {
         public Product()
         {
@@ -14,7 +14,7 @@ namespace ACM
         }
 
         public string ProductName { get; set; }
-        public string ProductId { get; private set; }
+        public int ProductId { get; private set; }
 
         public string ProductDescription { get; set; }
         public decimal? CurrentPrice { get; set; }
@@ -25,7 +25,7 @@ namespace ACM
             return new List<Product>();
         }
 
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
             if (string.IsNullOrWhiteSpace(ProductName)) isValid = false;

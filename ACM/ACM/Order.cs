@@ -14,7 +14,7 @@ namespace ACM
             OrderId = orderId;
         }
 
-        public string OrderId { get; private set; }
+        public int OrderId { get; private set; }
         public DateTimeOffset? OrderDate { get; set; }
     }
 }

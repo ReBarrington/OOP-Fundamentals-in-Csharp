@@ -55,6 +55,11 @@ Order Item
 - `Retrieve()`
 - `Save()`
 
+EntityBase 
+- a base class for all other classes
+- good example for abstract class
+- 
+
 ## The Customer Class
 
 Creating Get/Set
@@ -124,3 +129,23 @@ Customer.InstanceCount += 1;
  ```
  <hr>
 
+## Relationships
+
+- Collaboration ("uses a")
+- Composition ("has a")
+    - ex) customer has an address.
+    - aggregation (multiple items that can exist without its parent)
+    - composition (object owns the related objects and delete cascades)
+- Inheritance ("is a")
+
+## Inheritance
+By default, class members are sealed and cannot be overridden
+You can expose members using:
+- abstract
+    - method signature as place holder with no implementation
+    - only use in abstract classes
+    - must be overridden by derived class
+- virtual
+    - method with default implementation
+    - use in abstract or concrete classes
+    - optionally overridden by derived class
