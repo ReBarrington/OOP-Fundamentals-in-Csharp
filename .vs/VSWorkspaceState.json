@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\ACM",
-    "\\ACM\\ACM",
-    "\\ACM\\Tests",
-    "\\ACM\\Tests\\ACMTest"
+    ""
   ],
-  "SelectedNode": "\\ACM\\ACM\\AddressRepository.cs",
+  "SelectedNode": "\\ACM.sln",
   "PreviewInSolutionExplorer": false
 }

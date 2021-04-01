@@ -12,6 +12,9 @@
 
 <hr>
 
+## Interface
+- empty type... no properties
+
 ## Common Application Layers
 
 - User Interface Layer
@@ -122,6 +125,12 @@ var customer1 = new Customer();
 ``` public static int InstanceCount { get; set; }```
 
 The static modifier defines members that belong to the class itself and not to an instance of that class. 
+
+- A static class cannot be instantiated with `new`
+- access members using the class name
+- members must also be declared static
+- often used as a container for utility methods
+- the `StringHandler` is a static class example.
 
 ```
 c1.FirstName = "Bilbo";
