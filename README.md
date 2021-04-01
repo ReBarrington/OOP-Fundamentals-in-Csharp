@@ -158,3 +158,28 @@ You can expose members using:
     - method with default implementation
     - use in abstract or concrete classes
     - optionally overridden by derived class
+
+## Extention Method
+
+```
+public static class StringHandler
+{
+    public static string InsertSpaces(string source){
+        ...
+    }
+
+    // using the method:
+    return StringHandler.InsertSpaces(productName);
+
+```
+
+```
+public static class StringHandler
+{
+    pblic static string InsertSpaces(this string source)
+    { ...
+    }
+
+    // using the method:
+}   return _productName.InsertSpaces()
+```
